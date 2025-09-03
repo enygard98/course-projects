@@ -4,7 +4,7 @@ from collections.abc import Callable
 
 def mesh_function(f: Callable[[float], float], t: np.ndarray) -> np.ndarray:
     fn = np.zeros(len(t))
-    for i, tn in enumberate(t):
+    for i, tn in enumerate(t):
         fn[i] = f(tn)
     return fn
 
